@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args){
+       //creates a scanner object to read the users input
+       //will prompt user to enter Ascii value(s)
+       Scanner myObj = new Scanner(System.in);
+       System.out.println("Enter Ascii: ");
+
+       //creates a loop that will continue until user enters a 0
+       //will read the integers entered by the user to convert
+       //the converted Ascii will print
+       boolean convert = true;
+       while (convert) {
+           int AsciiValue = myObj.nextInt();
+           System.out.print((char)AsciiValue);
+           if (AsciiValue == 0){
+               convert = false;
+           }
+       }
+   }
+
+
+}
+
+
+
+
